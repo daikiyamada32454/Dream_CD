@@ -1,24 +1,53 @@
-# README
+# SNS 夢の投稿
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# 概要
+- ユーザーが今追っている夢、もしくは叶った、叶わなかった夢を投稿する場所。
+- 他人の夢記録を見ることで、現状の再確認、他人も頑張っていると認識することで、再起するきっかけを作る。
 
-Things you may want to cover:
+# URL
 
-* Ruby version
+# 利用方法
+- ユーザー登録
+- ユーザーが今追っている夢、もしくは叶った、叶わなかった夢を投稿する
+- 他社の投稿をみて、コメント、すごいねをする。
 
-* System dependencies
+# 課題解決
+- 夢を追いかけている際、うまく行かず挫けそうな人を助ける。
+- 同じ夢出なくても、夢に対して頑張っている人同士励ますことで、挫折をなくす。
+- 夢の諦めどころを間違えないようにする。
+- 夢を叶えられなかった人が再度夢を追いかける。もしくは、追いかける人のアドバイスをする場所を作る。
 
-* Configuration
+# 要件定義
+- ユーザーが夢を言語化できるようにする
+- ユーザーが夢を追いかける際に心の支えを作れるようにする
+- コメント機能でアドバイス、励ましあいができるようにする
 
-* Database creation
+# 実装予定
+- ユーザー機能
+- 投稿機能
+- コメント機能
+- 検索機能
+- フォロー機能
+- すごいね機能（いいね機能）
 
-* Database initialization
+# データベース設計
 
-* How to run the test suite
+# userテーブル
+| Column           | Type    | Option     |
+|------------------|---------|------------|
+| name             | string  | null:false |
+| email            | string  | null:false |
 
-* Services (job queues, cache servers, search engines, etc.)
+# dreamテーブル
+| Column           | Type    | Option     |
+| -----------------|---------|------------|
+| tweet            | string  | null:false |
+| image            |         |            |
 
-* Deployment instructions
-
-* ...
+# commentテーブル
+| Column           | Type    | Option     |
+| -----------------|------------|-------------------------------|
+| comment          | string     | null:false                    |
+| image            |            |                               |
+| dream_id      | references | null:false, foreign_key: true |
+| user_id          | references | null:false, foreign_key: true |
