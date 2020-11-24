@@ -1,2 +1,0 @@
-class DreamCdsController < ApplicationController
-end
