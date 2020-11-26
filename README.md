@@ -38,7 +38,7 @@
 | name             | string  | null:false |
 | email            | string  | null:false |
 
-# dreamテーブル
+# tweetsテーブル
 | Column           | Type    | Option     |
 | -----------------|---------|------------|
 | tweet            | string  | null:false |
