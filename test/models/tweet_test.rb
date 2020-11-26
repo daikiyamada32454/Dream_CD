@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class DreamCdsControllerTest < ActionDispatch::IntegrationTest
+class TweetTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end
