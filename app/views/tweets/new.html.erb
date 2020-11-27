@@ -1,0 +1,22 @@
+投稿画面
+<%= form_with model:@tweet,local: true do |f| %>
+<div class="tweet-wrap">
+  <div class="tweet-group">
+    <%= f.text_field :description, class:"tweet-text", id:"tweet-info", placeholder:"叶えたい夢の詳細" %>
+  </div>
+  <div class="tweet-play">
+    <%= f.text_area :play, class:"tweet-text", id:"tweet-info", placeholder:"夢をかなえるための行動！！"%>
+  </div>
+  <p>
+  勉強、練習などの写真、スクリーンショットなどをあげよう
+  </p>
+  <div class="tweet-img">
+    <%= f.file_field :image, id:"tweet-imag"%>
+  </div>
+  <div class="tweet-btn-content">
+    <%= f.submit "投稿する", class:"tweet-btn"%>
+  </div>
+  <div class="bacl-btn">
+    <%= link_to '戻る', root_path, class:"back-btn-b"%>
+</div>
+<% end %> 
