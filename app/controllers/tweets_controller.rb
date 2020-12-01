@@ -12,10 +12,12 @@ class TweetsController < ApplicationController
       render :new
     end
   end
-
+  def index
+    @tweets = Tweet.all
+  end
   
   private
   def tweet_params
-    params.require(:tweet).permit(:image, :description,:play)
+    params.require(:tweet).permit(:image, :description,:play).merge(user_id: current_user.id)
   end
 end
