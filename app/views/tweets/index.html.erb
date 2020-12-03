@@ -2,3 +2,10 @@
 <li><%= link_to 'ログアウト',destroy_user_session_path, method: :delete, class:"logout"%></li>
 <li><%= link_to '新規登録',new_user_registration_path, class:"sign-up"%></li>
 <li><%= link_to '投稿',  new_tweet_path, class:"tweet-up"%></li>
+<div class="contents">
+  <% @tweets.each do |tweet| %>
+  <%= tweet.description %>
+  <%= tweet.play %>
+  <%= image_tag tweet.image.variant(resize: '500x500')%>
+  <% end %>
+</div> 
