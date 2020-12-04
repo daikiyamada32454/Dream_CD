@@ -4,8 +4,12 @@
 <li><%= link_to '投稿',  new_tweet_path, class:"tweet-up"%></li>
 <div class="contents">
   <% @tweets.each do |tweet| %>
-  <%= tweet.description %>
-  <%= tweet.play %>
-  <%= image_tag tweet.image.variant(resize: '500x500')%>
+  <div class="description">
+    <%= tweet.description %>
+  </div>
+  <div class="play">
+    <%= tweet.play %>
+  </div>
+    <%= image_tag tweet.image.variant( resize: '300x300'),class: "image"%>
   <% end %>
-</div> 
+</div>
