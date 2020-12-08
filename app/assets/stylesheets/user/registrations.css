@@ -1,4 +1,6 @@
 .from-wrap{
-  margin: 0 50px;
-  background-color: black
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 150px;
+  width: 8em
 }
