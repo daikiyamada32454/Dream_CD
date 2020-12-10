@@ -10,6 +10,6 @@
   <div class="play">
     <%= tweet.play %>
   </div>
-    <%= image_tag tweet.image.variant( resize: '300x300'),class: "image"%>
+    <%= image_tag tweet.image.variant( resize: '300x300'),class: "image" if tweet.image.attached? %>
   <% end %>
 </div>
