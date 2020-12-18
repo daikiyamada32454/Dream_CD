@@ -5,14 +5,14 @@
 <div class="contents">
   <%if @tweets.length !=0 %>
     <% @tweets.each do |tweet| %>
-    <%= link_to tweet_path(tweet), method: :get do %>
-      <div class="description">
-        <%= tweet.description %>
-      </div>
-      <div class="play">
-        <%= tweet.play %>
-      </div>
-    <% end %>
+      <%= link_to tweet_path(tweet), method: :get do %>
+        <div class="description">
+          <%= tweet.description %>
+        </div>
+        <div class="play">
+          <%= tweet.play %>
+        </div>
+      <% end %>
         <%= image_tag tweet.image.variant( resize: '300x300'),class: "image" if tweet.image.attached? %>
     <% end %>
   <% end %>
