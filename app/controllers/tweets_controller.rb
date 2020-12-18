@@ -12,8 +12,13 @@ class TweetsController < ApplicationController
       render :new
     end
   end
+
   def index
     @tweets = Tweet.all
+  end
+
+  def show
+    @tweet = Tweet.find(params[:id])
   end
   
   private

@@ -1,0 +1,5 @@
+<h3>詳細</h3>
+<%= image_tag @tweet.image.variant( resize: '500x500') ,class:"show-image" if @tweet.image.attached? %>
+<%= @tweet.description%>
+<%= @tweet.play%>
+<%= @tweet.user.nickname %>
