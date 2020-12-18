@@ -1,0 +1,11 @@
+.contents{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    width: 8em
+}
+.description{
+  font-size: 35px;
+  font-weight: bold;
+}
