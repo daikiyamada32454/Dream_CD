@@ -3,13 +3,17 @@
 <li><%= link_to '新規登録',new_user_registration_path, class:"sign-up"%></li>
 <li><%= link_to '投稿',  new_tweet_path, class:"tweet-up"%></li>
 <div class="contents">
-  <% @tweets.each do |tweet| %>
-  <div class="description">
-    <%= tweet.description %>
-  </div>
-  <div class="play">
-    <%= tweet.play %>
-  </div>
-    <%= image_tag tweet.image.variant( resize: '300x300'),class: "image" if tweet.image.attached? %>
+  <%if @tweets.length !=0 %>
+    <% @tweets.each do |tweet| %>
+    <%= link_to tweet_path(tweet), method: :get do %>
+      <div class="description">
+        <%= tweet.description %>
+      </div>
+      <div class="play">
+        <%= tweet.play %>
+      </div>
+    <% end %>
+        <%= image_tag tweet.image.variant( resize: '300x300'),class: "image" if tweet.image.attached? %>
+    <% end %>
   <% end %>
 </div>
