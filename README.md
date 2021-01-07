@@ -6,6 +6,9 @@
 
 # URL
 - https://yumecoot.herokuapp.com/
+- 以下テストアカウント情報
+- email  test@test
+- password test11
 # 利用方法
 - ユーザー登録
 - ユーザーが今追っている夢、もしくは叶った、叶わなかった夢を投稿する
