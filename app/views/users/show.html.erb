@@ -16,9 +16,11 @@
         </table>
 
       <h2 class="page-heading">
-      
         <%= "#{@user.nickname}さんの投稿"%>
       </h2>
+      <div>
+        <%= render partial: 'tweets/tweet',collection: @tweets %>
+      </div>
     </div>
   </div>
 </div>
