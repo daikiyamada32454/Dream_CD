@@ -1,0 +1,26 @@
+編集
+
+<%= form_with model: @user, url: user_path, method: :patch, class: 'update-main', local: true do |f|%>
+<div class="from-wrap">
+  <div class="form-group">
+    <div class="form-text-wrap">
+      <label class="form-text">ニックネーム</label>
+      <span class="indispensable">必須</span>
+    </div>
+    <%= f.text_area :nickname, class:"input-name", id:"nickname", placeholder:"例）タロウ（TARO）"%>
+  </div>
+  <div class="form-group">
+    <div class="form-text-wrap">
+      <label class="form-text">自己紹介文</label>
+      <span class="indispensable">必須</span>
+    </div>
+    <%= f.text_area :myinfo, class:"input-default", id:"myinfo", placeholder:"例）私はITエンジニアを目指しています。某プログラミングサイトで独学で学んでいます。"%>
+  </div>
+  <div class="register-btn">
+    <%= f.submit "更新", class:"register-red-btn"%>
+  </div>
+  <div class="back-btn">
+  <%= link_to '戻る', root_path, class:"back-btn-singup"%>
+  </div>
+</div>
+<% end %>
