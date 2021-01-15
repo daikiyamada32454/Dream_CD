@@ -21,7 +21,7 @@
       <div>
         <%= render partial: 'tweets/tweet',collection: @tweets %>
       </div>
-      <%= link_to '編集', edit_user_registration_path(@user.id), method: :get, class: "edit"%>
+      <%= link_to '編集',  edit_user_path(@user.id), method: :get, class: "edit"%>
     </div>
   </div>
 </div>
