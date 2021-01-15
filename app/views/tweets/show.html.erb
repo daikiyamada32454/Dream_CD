@@ -3,3 +3,6 @@
 <%= @tweet.description%>
 <%= @tweet.play%>
 <%= @tweet.user.nickname %>
+<div>
+<%= link_to "削除", tweet_path(@tweet), method: :delete, class: :tweet_delete %>
+</div>
