@@ -9,12 +9,16 @@ class UsersController < ApplicationController
   end
 
   def update
-    current_user.update(user_params)
+    @user = User.find(params[:id])
+    if @user.update(user_params)
+      redirect_to root_path
+    else
+      render :show
+    end
   end
 
   private
-
   def user_params
-    params.require(:user).permit(:nicknameparapa, :myinfo)
+    params.permit(:nickname, :myinfo)
   end
 end
