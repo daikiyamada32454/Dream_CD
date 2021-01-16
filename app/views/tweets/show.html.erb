@@ -2,7 +2,7 @@
 <%= image_tag @tweet.image.variant( resize: '500x500') ,class:"show-image" if @tweet.image.attached? %>
 <%= @tweet.description%>
 <%= @tweet.play%>
-<%= @tweet.user.nickname %>
+<%=link_to "#{ @tweet.user.nickname}",user_path(@tweet.user_id) , method: :get %>
 <div>
 <%= link_to "削除", tweet_path(@tweet), method: :delete, class: :tweet_delete %>
 </div>
