@@ -3,21 +3,19 @@
   display: flex;
 }
 
-.option{
-  display: flex;
+.op{
+  background-color: #11233d;
+  padding: 100px 50px 0px 25px;
 }
 
 .edit{
-  color: #11233d;
-  margin: 50px 0px 0px 30px;
+  color: #ffffff;
+  background-color: #11233d;
+  padding: 100px 0px 0px 25px;
 }
 
 .myinfos{
   display: flex;
-}
-
-.myinfo{
-  margin-top: 50px;
 }
 
 
