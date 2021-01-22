@@ -1,11 +1,60 @@
-.contents{
+.wrap{
+  display: flex;
+  background-color: #79fbf5;
+}
+
+.side-bar{
+  background-color: #11233d;
+  display: block;
+  height: 100vw;
+  list-style: none;
+  padding: 100px 25px;
+}
+
+.myname{
+  color: #ffffff;
+  padding: 10px;
+}
+
+.logout{
+  color: #ffffff;
+  padding: 10px;
+}
+
+.sign-up{
+  color: #ffffff;
+  padding: 10px;
+}
+
+.mypage{
+  color: #ffffff;
+  padding: 10px;
+}
+
+.login{
+  color: #ffffff;
+  padding: 10px;
+}
+
+.tweet-up{
+  color: #ffffff;
+  padding: 10px;
+}
+
+.main-contents{
     margin-left: auto;
     margin-right: auto;
     margin-top: 150px;
     margin-bottom: 150px;
     width: 8em
 }
+
 .description{
   font-size: 35px;
   font-weight: bold;
+  color: black;
+}
+
+.play{
+  color: black;
 }

@@ -1,24 +1,28 @@
-<% if user_signed_in? %>
-  <%=current_user.nickname %>
-<li><%= link_to 'ログアウト',destroy_user_session_path, method: :delete, class:"logout"%></li>
-<li><%= link_to 'マイページ',user_path(current_user.id), method: :get, class:"mypage"%></li>
-  <% else %>
-<li><%= link_to 'ログイン', new_user_session_path , class:"login" %></li>
-<li><%= link_to '新規登録',new_user_registration_path, class:"sign-up"%></li>
-<% end %>
-<li><%= link_to '投稿',  new_tweet_path, class:"tweet-up"%></li>
-<div class="contents">
-  <%if @tweets.length !=0 %>
-    <% @tweets.each do |tweet| %>
-      <%= link_to tweet_path(tweet), method: :get do %>
-        <div class="description">
-          <%= tweet.description %>
-        </div>
-        <div class="play">
-          <%= tweet.play %>
-        </div>
-      <% end %>
-        <%= image_tag tweet.image.variant( resize: '300x300'),class: "image" if tweet.image.attached? %>
+<div class="wrap">
+  <div class="side-bar">
+    <% if user_signed_in? %>
+      <div class="myname"><%= current_user.nickname %></div>
+    <div><%= link_to 'ログアウト',destroy_user_session_path, method: :delete,    class:"logout"%></div>
+    <div><%= link_to 'マイページ',user_path(current_user.id), method: :get, class:"mypage"%></div>
+    <% else %>
+    <div><%= link_to 'ログイン', new_user_session_path , class:"login" %></div>
+    <div><%= link_to '新規登録',new_user_registration_path, class:"sign-up"%></div>
     <% end %>
-  <% end %>
+    <div><%= link_to '投稿',  new_tweet_path, class:"tweet-up"%></div>
+  </div>
+  <div class="main-contents">
+    <%if @tweets.length !=0 %>
+      <% @tweets.each do |tweet| %>
+        <%= link_to tweet_path(tweet), method: :get do %>
+          <div class="description">
+            <%= tweet.description %>
+          </div>
+          <div class="play">
+            <%= tweet.play %>
+          </div>
+        <% end %>
+          <%= image_tag tweet.image.variant( resize: '300x300'),class: "image" if tweet.image.attached? %>
+          <% end %>
+    <% end %>
+  </div>
 </div>

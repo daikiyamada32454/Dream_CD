@@ -1,0 +1,51 @@
+.main{
+  background-color: #79fbf5;
+  display: flex;
+}
+
+.op{
+  background-color: #11233d;
+  padding: 100px 50px 0px 25px;
+}
+
+.edit{
+  color: #ffffff;
+  background-color: #11233d;
+  padding: 100px 0px 0px 25px;
+}
+
+.myinfos{
+  display: flex;
+}
+
+
+h2{
+  margin-left: 45vw;
+}
+
+.main-table{
+  display: flex;
+}
+
+table{
+  border: solid 5px #11233d;
+  margin-left: 30vw;
+}
+
+th{
+  border: solid 1px #11233d;
+}
+
+td{
+  border: solid 1px #11233d;
+}
+
+.mytweets{
+  display: flex;
+}
+
+.mytweet{
+  margin-left: 45vw;
+  margin-top: 100px;
+  width: 8em
+}
