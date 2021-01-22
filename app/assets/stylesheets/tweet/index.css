@@ -6,7 +6,7 @@
 .side-bar{
   background-color: #11233d;
   display: block;
-  height: 100vw;
+  height: 100vh;
   list-style: none;
   padding: 100px 25px;
 }
