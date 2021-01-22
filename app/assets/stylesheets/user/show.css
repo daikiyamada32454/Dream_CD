@@ -3,6 +3,15 @@
   display: flex;
 }
 
+.option{
+  display: flex;
+}
+
+.edit{
+  color: #11233d;
+  margin: 50px 0px 0px 30px;
+}
+
 .myinfos{
   display: flex;
 }

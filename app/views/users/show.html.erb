@@ -1,6 +1,9 @@
 <div class="main">
   <div class="inner">
     <div class="user__wrapper">
+    <div class="option">
+      <%= link_to '編集',  edit_user_path(@user.id), method: :get, class: "edit"%>
+    </div>
       <div class="myinfos">
         <div class="myinfo">
           <h2 class="page-heading">
@@ -26,7 +29,6 @@
         <div class="mytweet">
           <%= render partial: 'tweets/tweet',collection: @tweets %>
         </div>
-      <%= link_to '編集',  edit_user_path(@user.id), method: :get, class: "edit"%>
     </div>
   </div>
 </div>
