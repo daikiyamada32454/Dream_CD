@@ -1,0 +1,22 @@
+.login-from-wrap{
+  background-color: #79fbf5;
+  height: 100vh;
+}
+
+h3{
+  margin-left: 50%;
+}
+
+.login-red-btn{
+  border: 1px solid black;
+}
+
+.login-red-btn{
+  margin-left: 50%;
+  padding: 2px;
+}
+
+.back-btn-login{
+  margin-left: 50%;
+  color: black;
+}
