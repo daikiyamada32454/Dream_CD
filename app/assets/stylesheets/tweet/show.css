@@ -1,0 +1,34 @@
+.show-group{
+  background-color: #79fbf5;
+  height: 100vh;
+}
+
+.show-wrap{
+  display: flex;
+}
+
+.show-img{
+  margin-left: 40vw;
+  margin-top: 20px;
+}
+
+.show-description{
+  margin-left: 50vw;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+.show-play{
+  margin-left: 50vw;
+}
+
+.show_name{
+  margin-left: 50vw;
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.tweet_delete{
+  margin-left: 41vw;
+}
