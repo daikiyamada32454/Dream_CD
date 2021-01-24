@@ -1,0 +1,41 @@
+.tweet-wrap{
+  background-color: #79fbf5;
+  height: 100vh;
+}
+
+.tweet-group{
+  display: flex;
+}
+
+.tweet-description{
+  margin-left: 50vw;
+  margin-bottom: 10px;
+  border: 1px solid black;
+}
+
+.tweet-text{
+  margin-left: 50vw;
+  padding: 50px ;
+  border: 1px solid black;
+}
+
+p{
+  margin-left: 50vw;
+}
+
+.tweet-img{
+  margin-left: 50%;
+  margin-bottom: 10px;
+}
+
+.tweet-btn{
+  margin-left: 50vw;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  padding: 3px;
+}
+
+.back-btn-b{
+  margin-left: 50vw;
+
+}
