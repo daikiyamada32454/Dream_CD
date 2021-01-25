@@ -1,6 +1,7 @@
 .main{
   background-color: #79fbf5;
   display: flex;
+  min-height: 100vh;
 }
 
 .op{
