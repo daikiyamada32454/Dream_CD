@@ -5,8 +5,12 @@
 
 .op{
   background-color: #11233d;
-  padding: 100px 50px 0px 25px;
-  height: 100vh;
+  padding: 100px 25px;
+  min-width: 150px;
+}
+
+.edit{
+  width: auto;
 }
 
 .edit{
@@ -48,5 +52,4 @@ td{
 .mytweet{
   margin-left: 45vw;
   margin-top: 100px;
-  width: 8em
 }

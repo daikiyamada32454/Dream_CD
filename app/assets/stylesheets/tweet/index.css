@@ -6,7 +6,6 @@
 .side-bar{
   background-color: #11233d;
   display: block;
-  height: 100vh;
   list-style: none;
   padding: 100px 25px;
 }
@@ -46,7 +45,6 @@
     margin-right: auto;
     margin-top: 150px;
     margin-bottom: 150px;
-    width: 8em
 }
 
 .description{
