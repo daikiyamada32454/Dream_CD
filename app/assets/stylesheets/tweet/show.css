@@ -40,6 +40,11 @@
   display: initial;
 }
 
+.com_text{
+  border: 1px solid black ;
+  margin-left: 50%;
+}
+
 h5{
   margin-left: 50%;
 }
