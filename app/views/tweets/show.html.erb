@@ -31,14 +31,14 @@
   <div class="container">
     <% if user_signed_in? %>
       <%= form_with(model: [@tweet, @comment], local: true) do |form| %>
-        <%= form.text_area :text, placeholder: "コメントする", rows: "2" %>
-        <%= form.submit "SEND" %>
+        <%= form.text_area :text, class: :com_text,placeholder: "コメントする", rows: "2" %>
+        <%= form.submit "送信" %>
       <% end %>
     <% else %>
-      <strong><p>※※※ コメントの投稿には新規登録/ログインが必要です ※※※</p></strong>
+      <h6>※※※ コメントの投稿には新規登録/ログインが必要です ※※※</h6>
     <% end %>
         <div class="comments">
-      <h4>＜コメント一覧＞</h4>
+      <h5>＜コメント一覧＞</h5>
       <% @comments.each do |comment| %>
         <p>
           <strong><%= link_to comment.user.nickname, "/users/#{comment.user_id}" %>：</strong>
