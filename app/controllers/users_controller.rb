@@ -1,11 +1,15 @@
 class UsersController < ApplicationController
-
+  before_action :authenticate_user!, only:[:edit]
   def show
     @user = User.find(params[:id])
     @tweets = @user.tweets.includes(:user)
   end
 
   def edit
+    user = User.find(params[:id])
+    unless current_user.id == user.id
+      redirect_to root_path
+    end
   end
 
   def update
