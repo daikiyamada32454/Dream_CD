@@ -10,8 +10,8 @@ class User < ApplicationRecord
          has_many :comments
          
          with_options presence: true do
-          validates :nickname,format: { with:/\A[ぁ-んァ-ン一-龥]/}
-          validates :myinfo.format: { with:/\A[ぁ-んァ-ン一-龥]/}
+          validates :nickname
+          validates :myinfo 
          end
 
 end
