@@ -1,8 +1,8 @@
 <div class="from-wrap">
   <h2>新規登録</h2>
 
-
   <%= form_with model: @user, url: user_registration_path, class: 'registration-main', local: true do |f|%>
+<%= render 'layouts/error_messages', model: f.object %>
     <div class="form-group">
       <div class="form-text-wrap">
         <label class="form-text">ニックネーム</label>
