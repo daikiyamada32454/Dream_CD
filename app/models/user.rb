@@ -11,7 +11,7 @@ class User < ApplicationRecord
           validates :nickname
           validates :myinfo
           validates :password, format: { with:/\A[a-zA-Z0-9]+\z/}
-         validates :password, length: { maximum: 12}
+          validates :password, length: { maximum: 12}
          end
 
 end
