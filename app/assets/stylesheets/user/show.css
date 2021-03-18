@@ -54,3 +54,10 @@ td{
   margin-left: 45vw;
   margin-top: 100px;
 }
+
+@media screen and (max-width: 767px){
+  .main{
+    height: 100%;
+    width: 767px;
+  }
+}
