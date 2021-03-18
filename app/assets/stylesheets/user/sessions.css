@@ -26,7 +26,7 @@ h3{
 
 @media screen and (max-width: 767px){
   .login-from-wrap{
-    height: 100vh;
+    height: 100%;
     width: 767px;
   }
 }

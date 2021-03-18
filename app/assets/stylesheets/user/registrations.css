@@ -1,5 +1,7 @@
 .from-wrap{
   background-color: #79fbf5;
+  min-height: 100vh;
+  max-width: 1920px;
 }
 
 .from-text-wrap{
@@ -27,13 +29,8 @@
   margin-left: 50%;
 }
 
-
-
 .input-email{
   margin-left: 50%;
-}
-
-.input-email{
   width: 300px;
   border: 1px solid black;
 }
@@ -61,4 +58,15 @@ h2{
 .back-btn-singup{
   margin-left: 50%;
   color: black;
+}
+
+@media screen and (max-width: 767px){
+  .from-wrap{
+    height: 100%;
+    width: 767px;
+    background-color: gray;
+  }
+  .input-default{
+    width: 45%;
+  }
 }
