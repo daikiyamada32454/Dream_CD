@@ -17,12 +17,76 @@
           <div class="description">
             <%= tweet.description %>
           </div>
-          <div class="play">
-            <%= tweet.play %>
-          </div>
-        <% end %>
-          <%= image_tag tweet.image.variant( resize: '300x300'),class: "image" if tweet.image.attached? %>
+            <div class="play">
+              <%= tweet.play %>
+            </div>
+            <%= image_tag tweet.image.variant( resize: '300x300'),class: "image" if tweet.image.attached? %>
           <% end %>
+      <% end %>
+    <% else %>
+     <%= link_to '#' do %>
+          <div class="description">
+            <%= "ダミーデータ１" %>
+          </div>
+            <div class="play">
+              <%= "これはダミー投稿です。" %>
+            </div>
+            <%= image_tag "test.jpg",  size: '300x300' , class: "image" %>
+        <% end %>
+         <%= link_to '#' do %>
+          <div class="description">
+            <%= "ダミーデータ2" %>
+          </div>
+            <div class="play">
+              <%= "これはダミー投稿です。" %>
+            </div>
+            <%= image_tag "test2.jpg", size: '300x300', class: "image" %>
+        <% end %>
+         <%= link_to '#' do %>
+          <div class="description">
+            <%= "ダミーデータ3" %>
+          </div>
+            <div class="play">
+              <%= "これはダミー投稿です。" %>
+            </div>
+            <%= image_tag "test3.jpg", size: '300x300', class: "image" %>
+        <% end %>
+         <%= link_to '#' do %>
+          <div class="description">
+            <%= "ダミーデータ4" %>
+          </div>
+            <div class="play">
+              <%= "これはダミー投稿です。" %>
+            </div>
+            <%= image_tag "test4.jpg", size: '300x300', class: "image" %>
+        <% end %>
+         <%= link_to '#' do %>
+          <div class="description">
+            <%= "ダミーデータ5" %>
+          </div>
+            <div class="play">
+              <%= "これはダミー投稿です。" %>
+            </div>
+            <%= image_tag "test5.jpg", size: '300x300', class: "image" %>
+        <% end %>
+         <%= link_to '#' do %>
+          <div class="description">
+            <%= "ダミーデータ6" %>
+          </div>
+            <div class="play">
+              <%= "これはダミー投稿です。" %>
+            </div>
+            <%= image_tag "test6.jpg", size: '300x300', class: "image" %>
+        <% end %>
+         <%= link_to '#' do %>
+          <div class="description">
+            <%= "ダミーデータ１" %>
+          </div>
+            <div class="play">
+              <%= "これはダミー投稿です。" %>
+            </div>
+            <%= image_tag "test.jpg", size: '300x300', class: "image" %>
+        <% end %>
     <% end %>
   </div>
 </div>
