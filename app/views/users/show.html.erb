@@ -1,6 +1,7 @@
 <div class="main">
   <div class="op">
     <%= link_to '編集',  edit_user_path(@user.id), method: :get, class: "edit"%>
+    <%= render 'relationships/follow_button', user: @user %>
   </div>
   <div class="inner">
     <div class="user__wrapper">
